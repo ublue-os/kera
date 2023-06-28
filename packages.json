@@ -1,0 +1,29 @@
+{
+    "all": {
+        "include": {
+            "all": [
+                "gnome-console",
+                "gnome-shell-extension-dash-to-dock",
+                "python3-pip"
+            ]
+        },
+        "exclude": {
+            "all": [
+                "gnome-terminal",
+                "gnome-terminal-nautilus",
+                "htop",
+                "firefox",
+                "firefox-langpacks",
+                "nvtop"
+            ]
+        }
+    },
+    "38": {
+        "include": {
+            "all": []
+        },
+        "exclude": {
+            "all": []
+        }
+    }
+}
