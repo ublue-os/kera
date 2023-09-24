@@ -1,0 +1,5 @@
+#!/bin/sh
+cage Xwayland :1 &
+sleep 1
+export DISPLAY=:1
+DISPLAY=:1 /usr/share/kera-desktop-bin/Kera-Desktop
