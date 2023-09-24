@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=Kera Desktop on Weston
-Comment=Kera Desktop Session On Weston
-Exec=/usr/bin/kera-session
-Type=Application

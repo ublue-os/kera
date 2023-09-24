@@ -1,4 +1,4 @@
-ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME:-base}"
+ARG BASE_IMAGE_NAME="${BASE_IMAGE_NAME:-silverblue}"
 ARG IMAGE_FLAVOR="${IMAGE_FLAVOR:-main}"
 ARG SOURCE_IMAGE="${SOURCE_IMAGE:-$BASE_IMAGE_NAME-$IMAGE_FLAVOR}"
 ARG BASE_IMAGE="ghcr.io/ublue-os/${SOURCE_IMAGE}"
@@ -17,8 +17,8 @@ RUN wget -qO /tmp/kera-desktop.tar.gz "https://gitlab.com/kerahq/releases/-/raw/
     mkdir -p /usr/share/kera-desktop-bin && \
     tar -xf /tmp/kera-desktop.tar.gz -C /usr/share/kera-desktop-bin && \
     /tmp/build.sh && \
+    echo -e '[daemon]\nDefaultSession=kera.desktop' >> /etc/gdm/custom.conf && \
     rm -rf /tmp/* /var/* && \
-    systemctl enable sddm && \
     ostree container commit && \
     mkdir -p /var/tmp && \
     chmod -R 1777 /var/tmp

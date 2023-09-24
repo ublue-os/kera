@@ -2,25 +2,7 @@
     "all": {
         "include": {
             "all": [
-                "cage",
-                "sddm",
-                "wireplumber",
-                "pipewire-gstreamer",
-                "pipewire-pulseaudio",
-                "pipewire-alsa",
-                "pipewire-jack-audio-connection-kit",
-                "pipewire-plugin-libcamera",
-                "pavucontrol",
-                "gnome-software",
-                "nm-connection-editor",
-                "NetworkManager-adsl",
-                "NetworkManager-bluetooth",
-                "NetworkManager-ppp",
-                "NetworkManager-wifi",
-                "NetworkManager-wwan",
-                "blueman",
-                "polkit-gnome",
-                "qt5-qtwayland"
+                "cage"
             ]
         },
         "exclude": {
